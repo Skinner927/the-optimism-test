@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Optimism Tests</title>
+  <style type="text/css">
+    /* http://bettermotherfuckingwebsite.com/ */
+    body {
+      margin: 40px auto;
+      max-width: 650px;
+      line-height: 1.6;
+      font-size: 18px;
+      color: #444;
+      padding: 0 10px
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2
+    }
+
+    /* small improvements */
+    label,
+    input {
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <p>
+      From <a href="https://kihc.ca/the-optimism-test/">https://kihc.ca/the-optimism-test/</a>.
+    </p>
+
+    <h3>The Optimism Test</h3>
+    <p>Read the description of each situation and vividly imagine it happening to you, even if
+      it's never actually happened. Then read the two reasons for why this situation happened.
+      Choose the cause more likely to apply to you. You may not like the way some of the responses
+      sound, but don'''t choose what you <em>think</em> <em>you should say</em> or what would
+      sound right to other people - choose the response you'd be likelier to have.</p>
+    <p>&nbsp;</p>
+    <!-- this horrific <ol start=""> stuff comes from the original author's site -->
+    <form id="quiz">
+      <ol>
+        <li>The project you are in charge of is a great success:
+          <ol>
+            <li>I kept a close watch over everyone's work</li>
+            <li>Everyone devoted a lot of time and energy to it</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="2">
+        <li>You and your spouse (boyfriend/girlfriend) make up after a fight:
+          <ol>
+            <li>I forgave him/her</li>
+            <li>I'm usually forgiving</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="3">
+        <li>You get lost driving to a friend's house:
+          <ol>
+            <li>I missed a turn</li>
+            <li>My friend gave me bad directions</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="4">
+        <li>Your spouse (boyfriend/girlfriend) surprises you with a gift:
+          <ol>
+            <li>He/she just got a raise at work</li>
+            <li>I took him/her out to a special dinner the night before</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="5">
+        <li>You forget your spouse's (boyfriend's/girlfriend's) birthday:
+          <ol>
+            <li>I'm not good at remembering birthdays</li>
+            <li>I was preoccupied with other things</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="6">
+        <li>You get a flower from a secret admirer:
+          <ol>
+            <li>I am attractive to him/her</li>
+            <li>I am a popular person</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="7">
+        <li>You run for a community office position and you win:
+          <ol>
+            <li>I devoted a lot of time and energy to campaigning</li>
+            <li>I work very hard at everything I do</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="8">
+        <li>You miss an important engagement:
+          <ol>
+            <li>Sometimes my memory fails me</li>
+            <li>I sometimes forget to check my appointment book</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="9">
+        <li>You run for a community office position and you lose:
+          <ol>
+            <li>I didn't campaign hard enough</li>
+            <li>The person who won knew more people</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="10">
+        <li>You host a successful dinner:
+          <ol>
+            <li>I was particularly charming that night</li>
+            <li>I am a good host</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="11">
+        <li>You stop a crime by calling the police:
+          <ol>
+            <li>A strange noise caught my attention</li>
+            <li>I was alert that day</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="12">
+        <li>You were extremely healthy all year:
+          <ol>
+            <li>Few people around me were sick, so I wasn't exposed</li>
+            <li>I made sure I ate well and got enough rest</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="13">
+        <li>You owe the library ten dollars for an overdue book:
+          <ol>
+            <li>When I am really involved in what I am reading, I often forget when it's due</li>
+            <li>I was so involved in writing the report that I forgot to return the book</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="14">
+        <li>Your stocks make you a lot of money:
+          <ol>
+            <li>My broker decided to take on something new</li>
+            <li>My broker is a top-notch investor</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="15">
+        <li>You win an athletic contest:
+          <ol>
+            <li>I was feeling unbeatable</li>
+            <li>I train hard</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="16">
+        <li>You fail an important examination:
+          <ol>
+            <li>I wasn't as smart as the other people taking the exam</li>
+            <li>I didn't prepare for it well</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="17">
+        <li>You prepared a special meal for a friend and he/she barely touched the food:
+          <ol>
+            <li>I wasn't a good cook</li>
+            <li>I made the meal in a rush</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="18">
+        <li>You lose a sporting event for which you have been training for a long time:
+          <ol>
+            <li>I'm not very athletic</li>
+            <li>I'm not good at that sport</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="19">
+        <li>Your car runs out of gas on a dark street late at night:
+          <ol>
+            <li>I didn't check to see how much gas was in the tank</li>
+            <li>The gas gauge was broken</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="20">
+        <li>You lose your temper with a friend:
+          <ol>
+            <li>He/she is always nagging me</li>
+            <li>He/she was in a hostile mood</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="21">
+        <li>You are penalized for not returning your income tax forms on time:
+          <ol>
+            <li>I always put off doing my taxes</li>
+            <li>I was lazy about getting my taxes done this year</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="22">
+        <li>You ask a person out on a date and he/she says no:
+          <ol>
+            <li>I was a wreck that day</li>
+            <li>I got tongue-tied when I asked him/he on the date</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="23">
+        <li>A game-show host picks you out of the audience to participate in the show:
+          <ol>
+            <li>I was sitting in the right seat</li>
+            <li>I looked the most enthusiastic</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="24">
+        <li>You are frequently asked to dance at a party:
+          <ol>
+            <li>I am outgoing at parties</li>
+            <li>I was in perfect form that night</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="25">
+        <li>You buy your spouse (boyfriend/girlfriend) a gift he/she doesn't like:
+          <ol>
+            <li>I don't put enough thought into things like that</li>
+            <li>He/she has very picky tastes</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="26">
+        <li>You do exceptionally well in a job interview:
+          <ol>
+            <li>I felt extremely confident during the interview</li>
+            <li>I interview well</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="27">
+        <li>You tell a joke and everyone laughs:
+          <ol>
+            <li>The joke was funny</li>
+            <li>My timing was perfect</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="28">
+        <li>Your boss gives you too little time in which to finish a project, but you get it
+          finished
+          anyway:
+          <ol>
+            <li>I am good at my job</li>
+            <li>I am an efficient person</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="29">
+        <li>You've been feeling run-down lately:
+          <ol>
+            <li>I never get a chance to relax</li>
+            <li>I was exceptionally busy this week</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="30">
+        <li>You ask someone to dance and he/she says no:
+          <ol>
+            <li>I am not a good enough dancer</li>
+            <li>He/she doesn't like to dance</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="31">
+        <li>You save a person from choking to death:
+          <ol>
+            <li>I know a technique to stop someone from choking</li>
+            <li>I know what to do in crisis situations</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="32">
+        <li>Your romantic partner wants to cool things off for a while:
+          <ol>
+            <li>I'm too self-centered</li>
+            <li>I don't spend enough time with him/her</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="33">
+        <li>A friend says something that hurts your feelings:
+          <ol>
+            <li>She always blurts things out without thinking of others</li>
+            <li>My friend was in a bad mood and took it out on me</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="34">
+        <li>Your employer comes to you for advice:
+          <ol>
+            <li>I am an expert in the area about which I was asked</li>
+            <li>I'm good at giving useful advice</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="35">
+        <li>A friend thanks you for helping him/her get through a bad time:
+          <ol>
+            <li>I enjoy helping him/her through tough times</li>
+            <li>I care about people</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="36">
+        <li>You have a wonderful time at a party:
+          <ol>
+            <li>Everyone was friendly</li>
+            <li>I was friendly</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="37">
+        <li>Your doctor tells you that you are in good physical shape:
+          <ol>
+            <li>I make sure I exercise frequently</li>
+            <li>I am very health-conscious</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="38">
+        <li>Your spouse (boyfriend/girlfriend) takes you away for a romantic weekend:
+          <ol>
+            <li>He/she needed to get away for a few days</li>
+            <li>He/she likes to explore new areas</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="39">
+        <li>Your doctor tells you that you eat too much sugar:
+          <ol>
+            <li>I don't pay much attention to my diet</li>
+            <li>You can't avoid sugar, it's in everything</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="40">
+        <li>You are asked to head an important project:
+          <ol>
+            <li>I just successfully completed a similar project</li>
+            <li>I am a good supervisor</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="41">
+        <li>You and your spouse (boyfriend/girlfriend) have been fighting a great deal:
+          <ol>
+            <li>I have been feeling cranky and pressured lately</li>
+            <li>He/she has been hostile lately</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="42">
+        <li>You fall down a great deal while skiing:
+          <ol>
+            <li>Skiing is difficult</li>
+            <li>The trails were icy</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="43">
+        <li>You win a prestigious award:
+          <ol>
+            <li>I solved an important problem</li>
+            <li>I was the best employee</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="44">
+        <li>Your stocks are at an all-time low:
+          <ol>
+            <li>I didn't know much about the business climate at the time</li>
+            <li>I made a poor choice of stocks</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="45">
+        <li>You win the lottery:
+          <ol>
+            <li>It was pure chance</li>
+            <li>I picked the right numbers</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="46">
+        <li>You gain weight over the holidays and you can't lose it:
+          <ol>
+            <li>Diets don't work in the long run</li>
+            <li>The diet I tried didn't work</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="47">
+        <li>You are in the hospital and few people come to visit:
+          <ol>
+            <li>I'm irritable when I am sick</li>
+            <li>My friends are negligent about things like that</li>
+          </ol>
+        </li>
+      </ol>
+      <p>&nbsp;</p>
+      <ol start="48">
+        <li>They won't honor your credit card at a store:
+          <ol>
+            <li>I sometimes overestimate how much money I have</li>
+            <li>I sometimes forget to pay my credit card bill</li>
+          </ol>
+        </li>
+      </ol>
+
+      <p>&nbsp;</p>
+      <button type="submit">Grade</button>
+    </form>
+    <hr />
+    <h3>Scoring for the Optimism Test:</h3>
+    <p>&nbsp;</p>
+    <p>Overall, we're looking at 3 dimensions of optimism:</p>
+    <ol>
+      <li>Do you see bad events as <strong>permanent</strong>, or temporary? For example, if your
+        romantic partner breaks up with you, do you believe it's because you're unlovable or
+        that no one understands you (i.e. a permanent state)? Or do you believe that you two just
+        weren't a good match (a temporary state)? What about if you win the lottery? In this
+        case, if you believe that you're a lucky person (i.e. a permanent state), that's optimistic
+        compared to someone who thinks that they just got lucky with those numbers.</li>
+      <li>Are bad experiences specific, or do they affect all parts of your life (i.e.
+        <strong>pervasive</strong>)? For example, if you failed the math test, do you believe
+        it's because you're not smart enough (i.e. a pervasive state), or is it because you're
+        just not great at that subject (i.e. specific)?
+      </li>
+      <li>When bad things happen, do you blame yourself, or the circumstances
+        (<strong>personalized</strong>)?</li>
+    </ol>
+    <p>Pessimists tend to view bad events as permanent, pervasive, and personal. <em>When these
+        habits are </em>out of balance<em> with optimistic thinking, our risk of experiencing
+        depression and anxiety is higher. </em></p>
+    <p>&nbsp;</p>
+    <h4 id="score-scroll">Add 1 point for each of the following answers:</h4>
+    <div id="score-sheet">
+      <p style="padding-left: 40px;"><strong>PmB</strong> (Permanence Bad) score questions: 5a,
+        13a,
+        20a, 21a, 29a, 33a, 42a, 46a. Total PmB score:</p>
+      <p style="padding-left: 40px;"><strong>PmG</strong> (Permanence Good) score questions: 2b,
+        10b,
+        14b, 15b, 24a, 26b, 38b, 40b. Total PmG score:</p>
+      <p style="padding-left: 40px;"><strong>PvB</strong> (Pervasiveness Bad) score questions: 8a,
+        17a,
+        18a, 22a, 32a, 44a, 48a. Total PvB score:</p>
+      <p style="padding-left: 40px;"><strong>PvG</strong> (Pervasiveness Good) score questions: 6b,
+        7b,
+        28b, 31b, 34b, 35b, 37b, 43b. Total PvG score:</p>
+      <p style="padding-left: 40px;"><strong>PsB</strong> (Personalized Bad) score questions: 3a,
+        9a,
+        16a, 19a, 25a, 30a, 39a, 41a, 47a. Total PsB score:</p>
+      <p style="padding-left: 40px;"><strong>PsG</strong> (Personalized Good) score questions: 1a,
+        4b,
+        11b, 12b, 23b, 27b, 36b, 45b. Total PsG score:</p>
+    </div>
+    <fieldset>
+      <legend>Summary</legend>
+      <div id="summary">-- Need to complete the quiz first --</div>
+    </fieldset>
+    <p>&nbsp;</p>
+    <ol>
+      <li>Add the three G's (PmG + PvG + PsG) together - this is your total “good event” score.
+      </li>
+      <li>Add the three B's (PmB + PvB + PsB) together - this is your total “bad event” score.
+      </li>
+      <li>Subtract B from G to get your overall score.</li>
+      <li>Add only PmB (permanence) and PvB (pervasiveness) to get your “hopefulness” score.</li>
+    </ol>
+    <p>&nbsp;</p>
+    <p>If your &#8220;good event score&#8221; is: <span class="put-good-score"></span></p>
+    <ul>
+      <li>20 and above you think about good events very optimistically</li>
+      <li>17 - 19 your thinking is moderately optimistic</li>
+      <li>14 - 16 is about average</li>
+      <li>11 - 13 indicated that you think quite pessimistically</li>
+      <li>Anything 10 or less indicates great pessimism</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>If your &#8220;bad event score&#8221; is: <span class="put-bad-score"></span></p>
+    <ul>
+      <li>3 - 6 you are marvelously optimistic about bad events</li>
+      <li>6 - 9 you are moderately optimistic</li>
+      <li>10 - 11 is about average</li>
+      <li>12 - 14 is moderately pessimistic</li>
+      <li>Anything above 14 is very pessimistic</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>If your &#8220;overall score&#8221; (G - B score) is: <span
+        class="put-overall-score"></span></p>
+    <ul>
+      <li>Above 8, you are very optimistic</li>
+      <li>6 - 8 is moderately optimistic</li>
+      <li>3 - 5 is average</li>
+      <li>1 - 2 is moderately pessimistic</li>
+      <li>A score of 0 and below is very pessimistic</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>If your &#8220;hopefulness score&#8221; (PmB + PvB) is: <span class="put-hope-score"></span>
+    </p>
+    <ul>
+      <li>Above 12, you tend to feel very hopeless</li>
+      <li>9-11 is moderately hopeless</li>
+      <li>7 - 8 is average hopefulness</li>
+      <li>3 - 6 is moderately hopeful</li>
+      <li>0 - 2 is extraordinarily hopeful</li>
+    </ul>
+    <p>&nbsp;</p>
+    <p>Certainly, some situations call for mild pessimism and some call for more optimism.
+      Awareness
+      of these situations and our thoughts is key. <strong>If you have any concerns about your
+        scores, please follow-up with your primary healthcare provider for support!</strong></p>
+    <p>&nbsp;</p>
+
+
+    <script src="main.js"></script>
+  </div>
+</body>
+
+</html>
